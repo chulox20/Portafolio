@@ -433,6 +433,11 @@ function App() {
             </section>
 
             <footer style={{ padding: '4rem 2rem', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem', borderTop: '1px solid rgba(197, 160, 89, 0.1)', letterSpacing: '0.1rem' }}>
+              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
+                <a href="https://github.com/chulox20/Portafolio" target="_blank" rel="noopener noreferrer" className="social-link" style={{ display: 'inline-flex', padding: '0.5rem' }}>
+                  <Github size={20} />
+                </a>
+              </div>
               <p>© 2026 Jesús Figuera | Construido con Inteligencia Artificial y Pasión.</p>
             </footer>
           </main>
