@@ -21,7 +21,7 @@ const ProjectCard = ({ title, category, image, github, link }) => {
         >
             <div style={{ width: '100%', height: '250px', background: '#121212', position: 'relative', overflow: 'hidden' }}>
                 {image ? (
-                    <img src={image} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={image} alt={title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 20%' }} />
                 ) : (
                     <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(197, 160, 89, 0.2)', fontSize: '4rem', fontWeight: 'bold' }}>
                         {title.charAt(0)}

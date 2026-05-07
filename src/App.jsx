@@ -10,7 +10,6 @@ import logo from './assets/logo.jpg'
 import profilePic from './assets/yo.jpeg'
 import sakuraImg from './assets/sakura.jpeg'
 import benchmarkImg from './assets/Captura de pantalla_7-5-2026_22540_station-lptsgamer.vercel.app.jpeg'
-import benchmarkImg from './assets/Captura de pantalla_7-5-2026_22540_station-lptsgamer.vercel.app.jpeg'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -341,7 +340,7 @@ function App() {
                     link="https://sakura-linguis-lq9x.vercel.app/index.html" />
                   <ProjectCard
                     title="Benchmark Station"
-                    category="Laboratorio de Rendimiento Hardware"
+                    category="Laboratorio de Hardware"
                     image={benchmarkImg}
                     link="https://station-lptsgamer.vercel.app" />
                 </div>
