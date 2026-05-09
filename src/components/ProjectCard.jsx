@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ExternalLink, Github } from 'lucide-react'
 
-const ProjectCard = ({ title, category, image, github, link }) => {
+const ProjectCard = ({ title, tags, image, github, link }) => {
     return (
         <motion.div
             className="project-card"
@@ -11,7 +11,8 @@ const ProjectCard = ({ title, category, image, github, link }) => {
                 backdropFilter: 'blur(10px)',
                 border: '1px solid rgba(197, 160, 89, 0.1)',
                 overflow: 'hidden',
-                position: 'relative'
+                position: 'relative',
+                height: '100%'
             }}
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -29,12 +30,29 @@ const ProjectCard = ({ title, category, image, github, link }) => {
                 )}
             </div>
             <div style={{ padding: '2rem' }}>
-                <p style={{ color: 'var(--accent-color)', fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.2rem', marginBottom: '0.5rem' }}>{category}</p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
+                    {tags && tags.map((tag, index) => (
+                        <span key={index} style={{ 
+                            color: 'var(--accent-color)', 
+                            fontSize: '0.65rem', 
+                            textTransform: 'uppercase', 
+                            letterSpacing: '0.1rem',
+                            border: '1px solid rgba(197, 160, 89, 0.3)',
+                            padding: '0.2rem 0.6rem',
+                            borderRadius: '20px',
+                            background: 'rgba(197, 160, 89, 0.05)'
+                        }}>
+                            {tag}
+                        </span>
+                    ))}
+                </div>
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>{title}</h3>
                 <div style={{ display: 'flex', gap: '1rem' }}>
-                    <a href={github} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', transition: 'color 0.3s' }} className="hover-gold">
-                        <Github size={20} />
-                    </a>
+                    {github && (
+                        <a href={github} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', transition: 'color 0.3s' }} className="hover-gold">
+                            <Github size={20} />
+                        </a>
+                    )}
                     <a href={link} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', transition: 'color 0.3s' }} className="hover-gold">
                         <ExternalLink size={20} />
                     </a>

@@ -96,7 +96,7 @@ function App() {
                 transition={{ delay: 0.5, duration: 1, ease: [0.16, 1, 0.3, 1] }}
                 style={{ fontWeight: '500', color: 'var(--accent-color)' }}
               >
-                Arquitectura E-commerce & Soluciones con IA
+                E-commerce, Aplicaciones Escalables & Soluciones con Supabase
               </motion.span>
               <motion.h1
                 className="hero-title"
@@ -121,8 +121,8 @@ function App() {
                   willChange: 'transform'
                 }}
               >
-                JF | Desarrollador <br />
-                <span style={{ color: 'var(--accent-color)' }}>Frontend & Product Designer</span>
+                JF | Frontend Engineer <br />
+                <span style={{ color: 'var(--accent-color)' }}>& Product Designer</span>
               </motion.h1>
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
@@ -334,13 +334,13 @@ function App() {
                 <div className="projects-grid">
                   <ProjectCard
                     title="Sakura Linguis"
-                    category="Plataforma Educativa (Japonés)"
+                    tags={['Vanilla JavaScript', 'Advanced CSS', 'UI/UX Design']}
                     image={sakuraImg}
                     github="https://github.com/chulox20/SAKURA-LINGUIS"
                     link="https://sakura-linguis-lq9x.vercel.app/index.html" />
                   <ProjectCard
                     title="Benchmark Station"
-                    category="Laboratorio de Hardware"
+                    tags={['Fullstack Development', 'React', 'Supabase']}
                     image={benchmarkImg}
                     link="https://station-lptsgamer.vercel.app" />
                 </div>
