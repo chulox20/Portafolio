@@ -130,7 +130,7 @@ function App() {
                 transition={{ delay: 1, duration: 0.8 }}
                 style={{ margin: '6rem 0 4rem' }}
               >
-                <button className="btn-primary" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>Ver Portafolio</button>
+                <button className="btn-primary" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>Ver Proyectos</button>
               </motion.div>
 
               <motion.div
