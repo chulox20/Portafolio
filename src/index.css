@@ -194,6 +194,23 @@ canvas {
   width: 100%;
   z-index: 100;
   pointer-events: none;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-container.hidden {
+  transform: translateY(-100%);
+}
+
+.nav-container.visible {
+  transform: translateY(0);
+}
+
+.nav-container.scrolled {
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(197, 160, 89, 0.15);
 }
 
 .nav-inner {
@@ -204,6 +221,11 @@ canvas {
   justify-content: space-between;
   align-items: center;
   pointer-events: auto;
+  transition: padding 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-container.scrolled .nav-inner {
+  padding: 1rem 2rem;
 }
 
 .nav-links {

@@ -10,12 +10,39 @@ import logo from './assets/logo.jpg'
 import profilePic from './assets/yo.jpeg'
 import sakuraImg from './assets/sakura.jpeg'
 import benchmarkImg from './assets/Captura de pantalla_7-5-2026_22540_station-lptsgamer.vercel.app.jpeg'
+import iamidImg from './assets/iamid.png'
 
 function App() {
   const [loading, setLoading] = useState(true)
   const [copied, setCopied] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [formStatus, setFormStatus] = useState('idle') // idle, sending, success, error
+  const [navVisible, setNavVisible] = useState(true)
+  const [navScrolled, setNavScrolled] = useState(false)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      
+      if (currentScrollY > 50) {
+        setNavScrolled(true)
+      } else {
+        setNavScrolled(false)
+      }
+      
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setNavVisible(false)
+      } else {
+        setNavVisible(true)
+      }
+      
+      setLastScrollY(currentScrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [lastScrollY])
 
   const handleCopy = (e) => {
     e.preventDefault();
@@ -67,7 +94,7 @@ function App() {
         >
           <Background3D />
 
-          <nav className="nav-container">
+          <nav className={`nav-container ${navScrolled ? 'scrolled' : ''} ${navVisible ? 'visible' : 'hidden'}`}>
             <div className="nav-inner">
               <div className="nav-logo" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); setMenuOpen(false); }} style={{ cursor: 'pointer' }}>
                 <img src={logo} alt="Logo" style={{ height: '60px', width: '60px', borderRadius: '50%', border: '2px solid var(--accent-color)', objectFit: 'cover' }} />
@@ -332,6 +359,11 @@ function App() {
               <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                 <SectionHeader title="Proyectos" subtitle="Mis Trabajos" />
                 <div className="projects-grid">
+                  <ProjectCard
+                    title="I AM ID - Landing Page"
+                    tags={['Frontend Development', 'React', 'EmailJS', 'Vercel Deploy']}
+                    image={iamidImg}
+                    link="https://www.aimidagency.com/" />
                   <ProjectCard
                     title="Sakura Linguis"
                     tags={['Vanilla JavaScript', 'Advanced CSS', 'UI/UX Design']}
