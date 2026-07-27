@@ -11,6 +11,7 @@ import profilePic from './assets/yo.jpeg'
 import sakuraImg from './assets/sakura.jpeg'
 import benchmarkImg from './assets/Captura de pantalla_7-5-2026_22540_station-lptsgamer.vercel.app.jpeg'
 import iamidImg from './assets/iamid.png'
+import nexonImg from './assets/nexon.png'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -149,7 +150,14 @@ function App() {
                 }}
               >
                 JF | Frontend Engineer <br />
-                <span style={{ color: 'var(--accent-color)' }}>& Product Designer</span>
+                <span style={{
+                  background: 'linear-gradient(135deg, #FFF3D1 0%, #E5B23E 50%, #B8860B 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  display: 'inline-block',
+                  paddingBottom: '0.15em',
+                  marginBottom: '-0.15em'
+                }}>& Product Designer</span>
               </motion.h1>
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
@@ -175,7 +183,7 @@ function App() {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
-                <ArrowDown color="#C5A059" size={24} />
+                <ArrowDown color="var(--accent-color)" size={24} />
               </motion.div>
             </section>
 
@@ -192,12 +200,12 @@ function App() {
                   </p>
                   <div className="responsive-grid grid-2" style={{ gap: '1.5rem' }}>
                     <div className="skill-item">
-                      <Code color="#C5A059" size={32} style={{ marginBottom: '1rem' }} />
+                      <Code color="var(--accent-color)" size={32} style={{ marginBottom: '1rem' }} />
                       <h4 style={{ marginBottom: '0.5rem' }}>Full Stack Focus</h4>
                       <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Implementación con Antigravity y gestión de datos relacionales en Supabase.</p>
                     </div>
                     <div className="skill-item">
-                      <Palette color="#C5A059" size={32} style={{ marginBottom: '1rem' }} />
+                      <Palette color="var(--accent-color)" size={32} style={{ marginBottom: '1rem' }} />
                       <h4 style={{ marginBottom: '0.5rem' }}>Product Design</h4>
                       <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Interfaces de alta fidelidad creadas en Stitch y optimizadas para UX.</p>
                     </div>
@@ -235,7 +243,7 @@ function App() {
                     transition: { duration: 0.3 }
                   }}
                 >
-                  <Layers className="icon-pulse" color="#C5A059" size={40} style={{ marginBottom: '1.5rem' }} />
+                  <Layers className="icon-pulse" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
                   <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Diseño & UX</h3>
                   <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Herramienta: Stitch</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
@@ -256,7 +264,7 @@ function App() {
                     transition: { duration: 0.3 }
                   }}
                 >
-                  <Cpu className="icon-glow" color="#C5A059" size={40} style={{ marginBottom: '1.5rem' }} />
+                  <Cpu className="icon-glow" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
                   <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Inteligencia Artificial</h3>
                   <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Herramienta: Google AI Studio</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
@@ -277,7 +285,7 @@ function App() {
                     transition: { duration: 0.3 }
                   }}
                 >
-                  <Cloud className="icon-float" color="#C5A059" size={40} style={{ marginBottom: '1.5rem' }} />
+                  <Cloud className="icon-float" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
                   <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Desarrollo & Cloud</h3>
                   <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Herramientas: Antigravity & Supabase</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
@@ -303,7 +311,7 @@ function App() {
                     transition: { duration: 0.3 }
                   }}
                 >
-                  <ShoppingCart className="icon-pulse" color="#C5A059" size={40} style={{ marginBottom: '1.5rem' }} />
+                  <ShoppingCart className="icon-pulse" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
                   <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>E-commerce & Web Apps</h3>
                   <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Soluciones Escalables</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
@@ -324,7 +332,7 @@ function App() {
                     transition: { duration: 0.3 }
                   }}
                 >
-                  <Diamond className="icon-float" color="#C5A059" size={40} style={{ marginBottom: '1.5rem' }} />
+                  <Diamond className="icon-float" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
                   <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Landings & Portafolios</h3>
                   <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Presencia Digital & Branding</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
@@ -345,7 +353,7 @@ function App() {
                     transition: { duration: 0.3 }
                   }}
                 >
-                  <Sparkles className="icon-glow" color="#C5A059" size={40} style={{ marginBottom: '1.5rem' }} />
+                  <Sparkles className="icon-glow" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
                   <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Optimización con IA</h3>
                   <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Consultoría Tecnológica</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
@@ -355,26 +363,33 @@ function App() {
               </div>
             </section>
 
-            <section id="projects" style={{ padding: '8rem 2rem', background: 'rgba(30, 30, 30, 0.3)' }}>
+            <section id="projects" style={{ padding: '8rem 2rem', background: 'rgba(0, 0, 0, 0.4)' }}>
               <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
                 <SectionHeader title="Proyectos" subtitle="Mis Trabajos" />
                 <div className="projects-grid">
                   <ProjectCard
                     title="I AM ID - Landing Page"
                     tags={['Frontend Development', 'React', 'EmailJS', 'Vercel Deploy']}
+                    description="Estudio boutique digital especializado en la creación de identidades gráficas y páginas web. Diseño de marca, branding corporativo y presencia digital de alto impacto."
                     image={iamidImg}
-                    link="https://www.aimidagency.com/" />
+                    link="https://www.aimidagency.com/"
+                    featured />
+                  <ProjectCard
+                    title="Nexon"
+                    tags={['Clean Architecture', 'React', 'UI/UX Design']}
+                    image={nexonImg}
+                    link="https://nexondemo.vercel.app" />
+                  <ProjectCard
+                    title="Benchmark Station"
+                    tags={['Fullstack Development', 'React', 'Supabase']}
+                    image={benchmarkImg}
+                    link="https://station-lptsgamer.vercel.app" />
                   <ProjectCard
                     title="Sakura Linguis"
                     tags={['Vanilla JavaScript', 'Advanced CSS', 'UI/UX Design']}
                     image={sakuraImg}
                     github="https://github.com/chulox20/SAKURA-LINGUIS"
                     link="https://sakura-linguis-lq9x.vercel.app/index.html" />
-                  <ProjectCard
-                    title="Benchmark Station"
-                    tags={['Fullstack Development', 'React', 'Supabase']}
-                    image={benchmarkImg}
-                    link="https://station-lptsgamer.vercel.app" />
                 </div>
               </div>
             </section>
@@ -394,7 +409,7 @@ function App() {
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                     <a href="https://wa.me/584128034685" target="_blank" rel="noopener noreferrer" className="social-link" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none' }}>
-                      <MessageSquare color="#C5A059" size={24} />
+                      <MessageSquare color="var(--accent-color)" size={24} />
                       <div>
                         <span style={{ display: 'block', color: 'var(--text-primary)', fontWeight: '600' }}>WhatsApp</span>
                         <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Escríbeme directamente</span>
@@ -406,7 +421,7 @@ function App() {
                       className="social-link"
                       style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', cursor: 'pointer', position: 'relative' }}
                     >
-                      <Mail color="#C5A059" size={24} />
+                      <Mail color="var(--accent-color)" size={24} />
                       <div>
                         <span style={{ display: 'block', color: 'var(--text-primary)', fontWeight: '600' }}>Email</span>
                         <span style={{ fontSize: '0.85rem', color: copied ? '#4CAF50' : 'var(--accent-color)', fontWeight: '500', transition: 'color 0.3s ease' }}>
@@ -430,7 +445,7 @@ function App() {
                       <div style={{
                         padding: '3rem',
                         textAlign: 'center',
-                        background: 'rgba(197, 160, 89, 0.1)',
+                        background: 'rgba(229, 178, 62, 0.1)',
                         border: '1px solid var(--accent-color)',
                         borderRadius: '12px',
                         backdropFilter: 'blur(10px)'
@@ -442,13 +457,13 @@ function App() {
                     ) : (
                       <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                         <div className="input-group">
-                          <input name="name" type="text" placeholder="Nombre" required style={{ width: '100%', padding: '1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(197,160,89,0.2)', color: 'white', borderRadius: '4px', outline: 'none' }} />
+                          <input name="name" type="text" placeholder="Nombre" required style={{ width: '100%', padding: '1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(229,178,62,0.25)', color: 'white', borderRadius: '4px', outline: 'none' }} />
                         </div>
                         <div className="input-group">
-                          <input name="email" type="email" placeholder="Correo" required style={{ width: '100%', padding: '1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(197,160,89,0.2)', color: 'white', borderRadius: '4px', outline: 'none' }} />
+                          <input name="email" type="email" placeholder="Correo" required style={{ width: '100%', padding: '1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(229,178,62,0.25)', color: 'white', borderRadius: '4px', outline: 'none' }} />
                         </div>
                         <div className="input-group">
-                          <textarea name="message" placeholder="Mensaje" rows="5" required style={{ width: '100%', padding: '1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(197,160,89,0.2)', color: 'white', borderRadius: '4px', outline: 'none', resize: 'none' }}></textarea>
+                          <textarea name="message" placeholder="Mensaje" rows="5" required style={{ width: '100%', padding: '1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(229,178,62,0.25)', color: 'white', borderRadius: '4px', outline: 'none', resize: 'none' }}></textarea>
                         </div>
                         <button
                           type="submit"
@@ -470,7 +485,7 @@ function App() {
               </div>
             </section>
 
-            <footer style={{ padding: '4rem 2rem', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem', borderTop: '1px solid rgba(197, 160, 89, 0.1)', letterSpacing: '0.1rem' }}>
+            <footer style={{ padding: '4rem 2rem', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem', borderTop: '1px solid rgba(229, 178, 62, 0.15)', letterSpacing: '0.1rem' }}>
               <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
                 <a href="https://github.com/chulox20/Portafolio" target="_blank" rel="noopener noreferrer" className="social-link" style={{ display: 'inline-flex', padding: '0.5rem' }}>
                   <Github size={20} />

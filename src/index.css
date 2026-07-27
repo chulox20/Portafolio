@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
 
 :root {
-  --bg-color: #121212;
-  --surface-color: #1E1E1E;
-  --accent-color: #C5A059;
+  --bg-color: #000000;
+  --surface-color: #0A0A0A;
+  --accent-color: #E5B23E;
   --text-primary: #F5F5F5;
   --text-secondary: #808080;
   --font-main: 'Inter', sans-serif;
@@ -101,7 +101,7 @@ canvas {
 .loading-bar-container {
   width: 200px;
   height: 2px;
-  background-color: rgba(197, 160, 89, 0.1);
+  background-color: rgba(229, 178, 62, 0.1);
   margin-top: 2rem;
   overflow: hidden;
 }
@@ -116,17 +116,17 @@ canvas {
 @keyframes pulse {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4);
+    box-shadow: 0 0 0 0 rgba(229, 178, 62, 0.4);
   }
 
   70% {
     transform: scale(1.05);
-    box-shadow: 0 0 0 20px rgba(197, 160, 89, 0);
+    box-shadow: 0 0 0 20px rgba(229, 178, 62, 0);
   }
 
   100% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(197, 160, 89, 0);
+    box-shadow: 0 0 0 0 rgba(229, 178, 62, 0);
   }
 }
 
@@ -208,9 +208,9 @@ canvas {
 }
 
 .nav-container.scrolled {
-  background: rgba(18, 18, 18, 0.85);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(15px);
-  border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+  border-bottom: 1px solid rgba(229, 178, 62, 0.15);
 }
 
 .nav-inner {
@@ -303,7 +303,7 @@ canvas {
 
 .btn-primary:hover {
   color: var(--bg-color);
-  box-shadow: 0 0 30px rgba(197, 160, 89, 0.4);
+  box-shadow: 0 0 30px rgba(229, 178, 62, 0.4);
 }
 
 .btn-primary:hover::before {
@@ -337,27 +337,96 @@ textarea {
 input:focus,
 textarea:focus {
   border-color: var(--accent-color) !important;
-  background: rgba(197, 160, 89, 0.08) !important;
-  box-shadow: 0 0 20px rgba(197, 160, 89, 0.15);
+  background: rgba(229, 178, 62, 0.08) !important;
+  box-shadow: 0 0 20px rgba(229, 178, 62, 0.15);
 }
 
 .projects-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 4rem;
 }
 
 .project-card {
-  max-width: 450px;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-image-wrapper {
+  width: 100%;
+  height: 250px;
+  background: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card-content {
+  padding: 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Bento Grid: Featured Card */
+.project-card.featured {
+  grid-column: span 3;
+  order: 1;
+}
+
+.project-card.standard {
+  grid-column: span 1;
+  order: 2;
+}
+
+@media (min-width: 992px) {
+  .project-card.featured {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  
+  .project-card.featured .project-card-image-wrapper {
+    width: 55%;
+    height: auto;
+    min-height: 350px;
+  }
+  
+  .project-card.featured .project-card-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .project-card.featured {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-card.featured {
+    grid-column: span 1;
+  }
 }
 
 .skill-item {
   padding: 2rem;
-  background: rgba(30, 30, 30, 0.4);
-  border: 1px solid rgba(197, 160, 89, 0.1);
+  background: rgba(10, 10, 10, 0.6);
+  border: 1px solid rgba(229, 178, 62, 0.15);
   border-radius: 12px;
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
@@ -368,9 +437,9 @@ textarea:focus {
 }
 
 .skill-item:hover {
-  background: rgba(30, 30, 30, 0.6);
+  background: rgba(10, 10, 10, 0.85);
   border-color: var(--accent-color);
-  box-shadow: 0 10px 40px rgba(196, 167, 125, 0.15);
+  box-shadow: 0 10px 40px rgba(229, 178, 62, 0.2);
   transform: translateY(-5px);
 }
 
@@ -421,9 +490,9 @@ textarea:focus {
   height: 500px;
   background: var(--surface-color);
   position: relative;
-  border: 1px solid rgba(197, 160, 89, 0.2);
+  border: 1px solid rgba(229, 178, 62, 0.25);
   overflow: hidden;
-  box-shadow: 0 0 60px rgba(196, 167, 125, 0.25);
+  box-shadow: 0 0 60px rgba(229, 178, 62, 0.25);
 }
 
 .image-caption {
@@ -476,7 +545,7 @@ textarea:focus {
     gap: 3rem;
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 100;
-    border-left: 1px solid rgba(197, 160, 89, 0.1);
+    border-left: 1px solid rgba(229, 178, 62, 0.15);
     pointer-events: auto;
   }
 

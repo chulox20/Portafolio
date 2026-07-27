@@ -19,7 +19,7 @@ function BoxGrid() {
       {points.map((pos, i) => (
         <mesh key={i} position={pos}>
           <boxGeometry args={[0.02, 0.02, 0.02]} />
-          <meshStandardMaterial color="#C5A059" opacity={0.3} transparent />
+          <meshStandardMaterial color="#E5B23E" opacity={0.3} transparent />
         </mesh>
       ))}
     </group>
@@ -69,7 +69,7 @@ function Particles() {
     <>
       <instancedMesh ref={mesh} args={[null, null, count]}>
         <dodecahedronGeometry args={[0.1, 0]} />
-        <meshStandardMaterial color="#C5A059" roughness={0} metalness={1} />
+        <meshStandardMaterial color="#E5B23E" roughness={0} metalness={1} />
       </instancedMesh>
     </>
   )
@@ -80,8 +80,8 @@ const Background3D = () => {
     <Canvas shadows dpr={[1, 2]}>
       <PerspectiveCamera makeDefault position={[0, 0, 10]} fov={50} />
       <ambientLight intensity={0.5} />
-      <pointLight position={[10, 10, 10]} intensity={1.5} color="#C5A059" />
-      <spotLight position={[-10, 10, 10]} angle={0.15} penumbra={1} intensity={1} color="#C5A059" castShadow />
+      <pointLight position={[10, 10, 10]} intensity={1.5} color="#E5B23E" />
+      <spotLight position={[-10, 10, 10]} angle={0.15} penumbra={1} intensity={1} color="#E5B23E" castShadow />
       
       <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
       
@@ -90,7 +90,7 @@ const Background3D = () => {
         <Particles />
       </Float>
 
-      <fog attach="fog" args={['#121212', 5, 20]} />
+      <fog attach="fog" args={['#000000', 5, 20]} />
     </Canvas>
   )
 }
