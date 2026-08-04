@@ -378,7 +378,9 @@ function App() {
                   <ProjectCard
                     title="NexAdmin – Business Management Platform"
                     tags={['Fullstack', 'React', 'Supabase', 'PostgreSQL', 'Realtime']}
-                    image={nexadminImg} />
+                    description="Dashboard administrativo full-stack con autenticación, gestión de empleados, clientes, proyectos y facturación. Integra PostgreSQL, Supabase y funcionalidades en tiempo real en una interfaz moderna y totalmente responsive."
+                    image={nexadminImg}
+                    featured />
                   <ProjectCard
                     title="Nexon"
                     tags={['Clean Architecture', 'React', 'UI/UX Design']}

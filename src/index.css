@@ -343,7 +343,7 @@ textarea:focus {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 4rem;
 }
@@ -373,7 +373,7 @@ textarea:focus {
 
 /* Bento Grid: Featured Card */
 .project-card.featured {
-  grid-column: span 4;
+  grid-column: span 3;
 }
 
 .project-card.standard {
