@@ -386,12 +386,12 @@ textarea:focus {
     align-items: stretch;
     height: 320px;
   }
-  
+
   .project-card.featured .project-card-image-wrapper {
     width: 45%;
     height: 100%;
   }
-  
+
   .project-card.featured .project-card-content {
     width: 55%;
     display: flex;
@@ -405,7 +405,7 @@ textarea:focus {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .project-card.featured {
     grid-column: span 2;
   }
@@ -415,7 +415,7 @@ textarea:focus {
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .project-card.featured {
     grid-column: span 1;
   }

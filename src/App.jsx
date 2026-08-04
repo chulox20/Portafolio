@@ -380,6 +380,7 @@ function App() {
                     tags={['SaaS', 'React', 'Supabase', 'PostgreSQL', 'Realtime']}
                     description="Dashboard administrativo full-stack con autenticación, gestión de empleados, clientes, proyectos y facturación. Integra PostgreSQL, Supabase y funcionalidades en tiempo real en una interfaz moderna y totalmente responsive."
                     image={nexadminImg}
+                    github="https://github.com/chulox20/NexAdmin"
                     link="https://nex-admin-tau.vercel.app/"
                     credentials={[
                       { label: 'Usuario administrador', role: 'admin', accounts: [
@@ -395,6 +396,7 @@ function App() {
                     title="Nexon"
                     tags={['Clean Architecture', 'React', 'UI/UX Design']}
                     image={nexonImg}
+                    github="https://github.com/chulox20/NEXONDEMO"
                     link="https://nexondemo.vercel.app" />
                   <ProjectCard
                     title="Benchmark Station"
