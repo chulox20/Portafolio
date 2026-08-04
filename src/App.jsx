@@ -377,10 +377,19 @@ function App() {
                     featured />
                   <ProjectCard
                     title="NexAdmin – Business Management Platform"
-                    tags={['Fullstack', 'React', 'Supabase', 'PostgreSQL', 'Realtime']}
+                    tags={['SaaS', 'React', 'Supabase', 'PostgreSQL', 'Realtime']}
                     description="Dashboard administrativo full-stack con autenticación, gestión de empleados, clientes, proyectos y facturación. Integra PostgreSQL, Supabase y funcionalidades en tiempo real en una interfaz moderna y totalmente responsive."
                     image={nexadminImg}
                     link="https://nex-admin-tau.vercel.app/"
+                    credentials={[
+                      { label: 'Usuario administrador', role: 'admin', accounts: [
+                        { email: 'admin@nexadmin.com', password: 'admin123' }
+                      ]},
+                      { label: 'Equipo', role: 'team', accounts: [
+                        { email: 'ana@nexadmin.com', password: 'ana123' },
+                        { email: 'carlos@nexadmin.com', password: 'carlos123' }
+                      ]}
+                    ]}
                     featured />
                   <ProjectCard
                     title="Nexon"
