@@ -373,13 +373,11 @@ textarea:focus {
 
 /* Bento Grid: Featured Card */
 .project-card.featured {
-  grid-column: span 3;
-  order: 1;
+  grid-column: span 2;
 }
 
 .project-card.standard {
   grid-column: span 1;
-  order: 2;
 }
 
 @media (min-width: 992px) {
@@ -389,17 +387,17 @@ textarea:focus {
   }
   
   .project-card.featured .project-card-image-wrapper {
-    width: 55%;
+    width: 50%;
     height: auto;
-    min-height: 350px;
+    min-height: 100%;
   }
   
   .project-card.featured .project-card-content {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem;
+    padding: 2.5rem;
   }
 }
 
