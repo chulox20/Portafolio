@@ -343,7 +343,7 @@ textarea:focus {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   margin-top: 4rem;
 }
@@ -373,7 +373,7 @@ textarea:focus {
 
 /* Bento Grid: Featured Card */
 .project-card.featured {
-  grid-column: span 2;
+  grid-column: span 4;
 }
 
 .project-card.standard {
@@ -384,24 +384,24 @@ textarea:focus {
   .project-card.featured {
     flex-direction: row;
     align-items: stretch;
+    height: 320px;
   }
   
   .project-card.featured .project-card-image-wrapper {
-    width: 50%;
-    height: auto;
-    min-height: 100%;
+    width: 45%;
+    height: 100%;
   }
   
   .project-card.featured .project-card-content {
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2.5rem;
+    padding: 2rem;
   }
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 1199px) and (min-width: 768px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
