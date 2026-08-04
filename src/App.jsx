@@ -380,6 +380,7 @@ function App() {
                     tags={['Fullstack', 'React', 'Supabase', 'PostgreSQL', 'Realtime']}
                     description="Dashboard administrativo full-stack con autenticación, gestión de empleados, clientes, proyectos y facturación. Integra PostgreSQL, Supabase y funcionalidades en tiempo real en una interfaz moderna y totalmente responsive."
                     image={nexadminImg}
+                    link="https://nex-admin-tau.vercel.app/"
                     featured />
                   <ProjectCard
                     title="Nexon"
