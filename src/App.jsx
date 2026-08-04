@@ -12,6 +12,7 @@ import sakuraImg from './assets/sakura.jpeg'
 import benchmarkImg from './assets/Captura de pantalla_7-5-2026_22540_station-lptsgamer.vercel.app.jpeg'
 import iamidImg from './assets/iamid.png'
 import nexonImg from './assets/nexon.png'
+import nexadminImg from './assets/nexadmin.png'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -373,6 +374,12 @@ function App() {
                     description="Estudio boutique digital especializado en la creación de identidades gráficas y páginas web. Diseño de marca, branding corporativo y presencia digital de alto impacto."
                     image={iamidImg}
                     link="https://www.aimidagency.com/"
+                    featured />
+                  <ProjectCard
+                    title="NexAdmin – Business Management Platform"
+                    tags={['Fullstack', 'React', 'Supabase', 'PostgreSQL', 'Realtime']}
+                    description="Dashboard administrativo full-stack con autenticación, gestión de empleados, clientes, proyectos y facturación. Integra PostgreSQL, Supabase y funcionalidades en tiempo real en una interfaz moderna y totalmente responsive."
+                    image={nexadminImg}
                     featured />
                   <ProjectCard
                     title="Nexon"
