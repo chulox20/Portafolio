@@ -13,6 +13,7 @@ import benchmarkImg from './assets/Captura de pantalla_7-5-2026_22540_station-lp
 import iamidImg from './assets/iamid.png'
 import nexonImg from './assets/nexon.png'
 import nexadminImg from './assets/nexadmin.png'
+import lumastoreImg from './assets/lumastore.png'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -391,6 +392,14 @@ function App() {
                         { email: 'carlos@nexadmin.com', password: 'carlos123' }
                       ]}
                     ]}
+                    featured />
+                  <ProjectCard
+                    title="Luma Store — Ecommerce Full Stack"
+                    tags={['Fullstack Development', 'React', 'Supabase', 'PayPal']}
+                    description="Ecommerce full stack moderno desarrollado con React y Supabase. Incluye autenticación con email y Google, catálogo de productos, carrito persistente, favoritos, gestión de pedidos, inventario, reseñas, panel administrativo y pagos integrados con PayPal."
+                    image={lumastoreImg}
+                    github="https://github.com/chulox20/Luma-Store"
+                    link="https://luma-store-seven.vercel.app/"
                     featured />
                   <ProjectCard
                     title="Nexon"
