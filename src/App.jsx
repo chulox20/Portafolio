@@ -14,6 +14,12 @@ import iamidImg from './assets/iamid.png'
 import nexonImg from './assets/nexon.png'
 import nexadminImg from './assets/nexadmin.png'
 import lumastoreImg from './assets/lumastore.png'
+import aureaImg from './assets/aurea.png'
+import skilloraImg from './assets/skill.png'
+import finovaImg from './assets/finova.png'
+import savoraImg from './assets/savora.png'
+import vybeImg from './assets/vybe.png'
+import flowboardImg from './assets/flowboard.png'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -401,6 +407,51 @@ function App() {
                     github="https://github.com/chulox20/Luma-Store"
                     link="https://luma-store-seven.vercel.app/"
                     featured />
+                  <ProjectCard
+                    title="AUREA Hotel — Hotel Booking Platform"
+                    tags={['Fullstack', 'React', 'Supabase', 'PostgreSQL', 'PayPal']}
+                    description="Plataforma de reservas para hoteles con disponibilidad de habitaciones, gestión de estancias, calendario de ocupación, administración y pagos con PayPal."
+                    image={aureaImg}
+                    github="https://github.com/chulox20/AUREA-HOTEL-"
+                    link="https://aurea-hotel.vercel.app/" />
+                  <ProjectCard
+                    title="Skillora — Learning Management System"
+                    tags={['Fullstack', 'Node.js', 'Express', 'PostgreSQL', 'JWT']}
+                    description="Plataforma educativa full-stack para explorar cursos, gestionar inscripciones, seguir el progreso, realizar quizzes y obtener certificados."
+                    image={skilloraImg}
+                    github="https://github.com/chulox20/SKILLORA"
+                    link="https://skillora-app-kohl.vercel.app/" />
+                  <ProjectCard
+                    title="Finova — Personal Finance Manager"
+                    tags={['Fullstack', 'Node.js', 'PostgreSQL', 'Recharts', 'Finance']}
+                    description="Aplicación de finanzas personales para controlar cuentas, ingresos, gastos, presupuestos y metas mediante análisis financieros y gráficos interactivos."
+                    image={finovaImg}
+                    github="https://github.com/chulox20/FINOVA"
+                    link="https://finova-frontend-jade.vercel.app/" />
+                  <ProjectCard
+                    title="Savora — Restaurant Management Platform"
+                    tags={['Fullstack', 'Node.js', 'PostgreSQL', 'Socket.io', 'Realtime']}
+                    description="Plataforma integral para restaurantes con menú digital, pedidos, reservas, gestión de mesas, cocina y seguimiento de pedidos en tiempo real."
+                    image={savoraImg}
+                    github="https://github.com/chulox20/Savora"
+                    link="https://savorav1.vercel.app/" />
+                  <ProjectCard
+                    title="VYBE — Social Community Platform"
+                    tags={['Fullstack', 'Node.js', 'PostgreSQL', 'Socket.io', 'Social']}
+                    description="Red social full-stack con publicaciones, seguidores, comunidades, comentarios, notificaciones, mensajería en tiempo real y herramientas de moderación."
+                    image={vybeImg}
+                    github="https://github.com/chulox20/VYBE"
+                    link="https://vybev1.vercel.app/" />
+                  <ProjectCard
+                    title="Flowboard — Project Management Platform"
+                    tags={['Fullstack', 'React', 'Node.js', 'PostgreSQL', 'Socket.io']}
+                    description="Plataforma de gestión de proyectos con tableros Kanban, drag & drop, tareas, colaboración, comentarios, notificaciones y sincronización en tiempo real."
+                    image={flowboardImg}
+                    github="https://github.com/chulox20/FLOWBOARD"
+                    link="https://flowboardv01.vercel.app/login" />
+                </div>
+
+                <div className="projects-grid-3" style={{ marginTop: '2rem' }}>
                   <ProjectCard
                     title="Nexon"
                     tags={['Clean Architecture', 'React', 'UI/UX Design']}
