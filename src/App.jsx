@@ -212,18 +212,18 @@ function App() {
                   viewport={{ once: true }}
                 >
                   <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', lineHeight: '1.8', marginBottom: '2rem' }}>
-                    Soy Técnico Superior en Informática especializado en el desarrollo ágil de plataformas digitales. Mi enfoque combina la arquitectura técnica con un flujo de trabajo optimizado mediante IA para entregar productos de alto impacto en tiempos reducidos. Me apasiona fusionar la estética visual con soluciones robustas y escalables.
+                    Soy Técnico Superior en Informática y desarrollador web enfocado en crear productos digitales funcionales. Mi flujo de trabajo combina desarrollo web, UI/UX e inteligencia artificial para transformar ideas y requisitos en aplicaciones modernas y responsive. Utilizo herramientas de IA para generar, estructurar, depurar y optimizar código, complementando el proceso con Git/GitHub, APIs, bases de datos y despliegue en producción.
                   </p>
                   <div className="responsive-grid grid-2" style={{ gap: '1.5rem' }}>
                     <div className="skill-item">
                       <Code color="var(--accent-color)" size={32} style={{ marginBottom: '1rem' }} />
-                      <h4 style={{ marginBottom: '0.5rem' }}>Full Stack Focus</h4>
-                      <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Implementación con Antigravity y gestión de datos relacionales en Supabase.</p>
+                      <h4 style={{ marginBottom: '0.5rem' }}>Desarrollo Web</h4>
+                      <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Creación de aplicaciones y plataformas web responsive utilizando React, Node.js, PostgreSQL, APIs, autenticación y otras tecnologías modernas.</p>
                     </div>
                     <div className="skill-item">
                       <Palette color="var(--accent-color)" size={32} style={{ marginBottom: '1rem' }} />
                       <h4 style={{ marginBottom: '0.5rem' }}>Product Design</h4>
-                      <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Interfaces de alta fidelidad creadas en Stitch y optimizadas para UX.</p>
+                      <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Diseño de interfaces modernas y funcionales utilizando herramientas de prototipado y principios de UI/UX, priorizando claridad, usabilidad y experiencia de usuario.</p>
                     </div>
                   </div>
                 </motion.div>
@@ -261,9 +261,9 @@ function App() {
                 >
                   <Layers className="icon-pulse" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
                   <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Diseño & UX</h3>
-                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Herramienta: Stitch</p>
+                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Herramientas: Stitch · UI/UX</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                    Arquitectura visual y maquetación de interfaces de alta fidelidad, priorizando siempre la experiencia del usuario y la conversión.
+                    Diseño y estructuración de interfaces de alta fidelidad, priorizando jerarquía visual, usabilidad y experiencia responsive.
                   </p>
                 </motion.div>
 
@@ -281,10 +281,10 @@ function App() {
                   }}
                 >
                   <Cpu className="icon-glow" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
-                  <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Inteligencia Artificial</h3>
-                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Herramienta: Google AI Studio</p>
+                  <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>IA Aplicada al Desarrollo</h3>
+                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Herramientas: Antigravity · Google AI Studio · Prompting</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                    Optimización de la lógica y prototipado rápido mediante modelos de IA para acelerar el ciclo de desarrollo y resolver problemas complejos.
+                    Uso de inteligencia artificial para generar, estructurar, depurar y optimizar código, acelerando el desarrollo y la iteración de productos web.
                   </p>
                 </motion.div>
 
@@ -302,10 +302,10 @@ function App() {
                   }}
                 >
                   <Cloud className="icon-float" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
-                  <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Desarrollo & Cloud</h3>
-                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Herramientas: Antigravity & Supabase</p>
+                  <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Desarrollo & Deploy</h3>
+                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Herramientas: React · Node.js · PostgreSQL · Git/GitHub · Vercel</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                    Construcción de aplicaciones robustas con gestión de datos escalable, autenticación segura y despliegue continuo en la nube.
+                    Desarrollo de aplicaciones web y conexión con APIs, bases de datos y servicios, llevando los proyectos desde la idea hasta su despliegue en producción.
                   </p>
                 </motion.div>
               </div>
@@ -328,10 +328,10 @@ function App() {
                   }}
                 >
                   <ShoppingCart className="icon-pulse" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
-                  <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>E-commerce & Web Apps</h3>
-                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Soluciones Escalables</p>
+                  <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Web Apps & E-commerce</h3>
+                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Aplicaciones Web</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                    Desarrollo de tiendas online y aplicaciones web robustas con gestión de datos en tiempo real y arquitecturas preparadas para el crecimiento.
+                    Desarrollo de tiendas online y aplicaciones web funcionales, con interfaces responsive, autenticación, APIs, bases de datos y funcionalidades adaptadas a cada proyecto.
                   </p>
                 </motion.div>
 
@@ -349,10 +349,10 @@ function App() {
                   }}
                 >
                   <Diamond className="icon-float" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
-                  <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Landings & Portafolios</h3>
-                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Presencia Digital & Branding</p>
+                  <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Landing Pages & Portafolios</h3>
+                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Presencia Digital</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                    Creación de portafolios personales, menús digitales dinámicos para restaurantes y sitios corporativos elegantes, diseñados para proyectar una imagen profesional y captar clientes desde el primer clic.
+                    Creación de landing pages, portafolios y sitios corporativos modernos enfocados en presentar una marca, producto o servicio de forma clara y profesional.
                   </p>
                 </motion.div>
 
@@ -370,10 +370,10 @@ function App() {
                   }}
                 >
                   <Sparkles className="icon-glow" color="var(--accent-color)" size={40} style={{ marginBottom: '1.5rem' }} />
-                  <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Optimización con IA</h3>
-                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>Consultoría Tecnológica</p>
+                  <h3 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem', fontSize: '1.4rem' }}>Desarrollo Asistido por IA</h3>
+                  <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', marginBottom: '1rem', fontWeight: '600' }}>IA aplicada al desarrollo</p>
                   <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                    Integración de herramientas de Inteligencia Artificial para automatizar tareas, mejorar la atención al cliente o potenciar flujos de trabajo existentes.
+                    Uso de herramientas de inteligencia artificial y prompting para acelerar la creación, depuración y optimización de proyectos web, manteniendo control sobre diseño, funcionalidad y calidad final.
                   </p>
                 </motion.div>
               </div>
