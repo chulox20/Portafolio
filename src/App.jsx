@@ -157,7 +157,7 @@ function App() {
                   willChange: 'transform'
                 }}
               >
-                JF | Frontend Engineer <br />
+                JF | Desarrollador Web <br />
                 <span style={{
                   background: 'linear-gradient(135deg, #FFF3D1 0%, #E5B23E 50%, #B8860B 100%)',
                   WebkitBackgroundClip: 'text',
@@ -165,7 +165,7 @@ function App() {
                   display: 'inline-block',
                   paddingBottom: '0.15em',
                   marginBottom: '-0.15em'
-                }}>& Product Designer</span>
+                }}>AI-Assisted Development</span>
               </motion.h1>
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
