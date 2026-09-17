@@ -117,7 +117,7 @@ function App() {
                 <a href="#about" className="nav-link" onClick={() => setMenuOpen(false)}>Sobre Mí</a>
                 <a href="#methodology" className="nav-link" onClick={() => setMenuOpen(false)}>Método</a>
                 <a href="#services" className="nav-link" onClick={() => setMenuOpen(false)}>Servicios</a>
-                <a href="#projects" className="nav-link" onClick={() => setMenuOpen(false)}>Trabajos</a>
+                <a href="#projects" className="nav-link" onClick={() => setMenuOpen(false)}>Proyectos</a>
                 <a href="#contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contacto</a>
               </div>
             </div>
@@ -132,7 +132,7 @@ function App() {
                 transition={{ delay: 0.5, duration: 1, ease: [0.16, 1, 0.3, 1] }}
                 style={{ fontWeight: '500', color: 'var(--accent-color)' }}
               >
-                E-commerce, Aplicaciones Escalables & Soluciones con Supabase
+                DESARROLLO WEB · IA APLICADA · UI/UX · FULL STACK
               </motion.span>
               <motion.h1
                 className="hero-title"
@@ -167,11 +167,19 @@ function App() {
                   marginBottom: '-0.15em'
                 }}>AI-Assisted Development</span>
               </motion.h1>
+              <motion.p
+                className="hero-description"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9, duration: 0.8 }}
+              >
+                Transformo ideas en productos digitales funcionales, responsive y listos para producción mediante flujos de desarrollo asistidos por IA.
+              </motion.p>
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.8 }}
-                style={{ margin: '6rem 0 4rem' }}
+                style={{ margin: '2.5rem 0 3rem' }}
               >
                 <button className="btn-primary" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>Ver Proyectos</button>
               </motion.div>
